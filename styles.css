@@ -1,0 +1,744 @@
+/* ================================= */
+/* CONFIGURACIÓN GENERAL */
+/* ================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        #f7f3ef;
+
+    color: #292725;
+}
+
+
+/* ================================= */
+/* HEADER */
+/* ================================= */
+
+.main-header {
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8e2dc;
+
+    padding: 28px 20px;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.header-content {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.header-icon {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #292725;
+
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.header-small {
+
+    margin: 0;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    color: #9b9188;
+}
+
+
+.main-header h1 {
+
+    margin: 2px 0;
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+}
+
+
+.header-description {
+
+    margin: 0;
+
+    color: #8c8279;
+
+    font-size: 14px;
+}
+
+
+/* ================================= */
+/* CONTENEDOR */
+/* ================================= */
+
+.main-container {
+
+    max-width: 900px;
+
+    padding-top: 45px;
+
+    padding-bottom: 45px;
+}
+
+
+/* ================================= */
+/* TARJETA PRINCIPAL */
+/* ================================= */
+
+.color-card {
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 12px 40px rgba(70, 55, 45, 0.09);
+
+    border: 1px solid #eee7e1;
+}
+
+
+/* ================================= */
+/* TÍTULO DE SECCIÓN */
+/* ================================= */
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.section-icon {
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 15px;
+
+    background: #f0ebe6;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    color: #5d554e;
+}
+
+
+.section-title h2 {
+
+    margin: 0;
+
+    font-size: 23px;
+
+    font-weight: 750;
+}
+
+
+.section-title p {
+
+    margin: 4px 0 0;
+
+    color: #91877e;
+
+    font-size: 14px;
+}
+
+
+/* ================================= */
+/* COLOR PICKER */
+/* ================================= */
+
+.picker-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #faf8f6;
+
+    border-radius: 16px;
+
+    padding: 15px 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.picker-section label {
+
+    font-weight: 650;
+
+    color: #4d4742;
+}
+
+
+.picker-section label i {
+
+    margin-right: 7px;
+}
+
+
+#colorPicker {
+
+    width: 70px;
+    height: 42px;
+
+    padding: 3px;
+
+    border: 2px solid #ddd5ce;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background: white;
+}
+
+
+#colorPicker:hover {
+
+    transform: scale(1.05);
+
+    transition: 0.2s;
+}
+
+
+/* ================================= */
+/* RECUADRO DE COLOR */
+/* ================================= */
+
+#colorBox {
+
+    width: 100%;
+
+    height: 300px;
+
+    background: rgb(0, 0, 0);
+
+    border-radius: 22px;
+
+    border: 8px solid white;
+
+    outline: 1px solid #e7e1dc;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+#colorBox:hover {
+
+    transform: scale(1.005);
+}
+
+
+/* ================================= */
+/* INFORMACIÓN RGB / HEX */
+/* ================================= */
+
+.color-info {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 22px;
+}
+
+
+.info-box {
+
+    background: #faf8f6;
+
+    border-radius: 15px;
+
+    padding: 15px 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.info-box span {
+
+    color: #978d84;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.info-box strong {
+
+    font-family: monospace;
+
+    font-size: 15px;
+
+    color: #393532;
+}
+
+
+/* ================================= */
+/* RGB SECTION */
+/* ================================= */
+
+.rgb-section {
+
+    margin-top: 35px;
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading i {
+
+    font-size: 19px;
+
+    color: #746b63;
+}
+
+
+.section-heading h3 {
+
+    font-size: 17px;
+
+    margin: 0;
+
+    font-weight: 750;
+}
+
+
+/* ================================= */
+/* CONTROLES RGB */
+/* ================================= */
+
+.rgb-control {
+
+    display: grid;
+
+    grid-template-columns: 110px 1fr 75px;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 13px 16px;
+
+    border-radius: 16px;
+
+    margin-bottom: 10px;
+
+    background: #faf9f8;
+}
+
+
+.color-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+}
+
+
+.color-label span:last-child {
+
+    margin-left: auto;
+
+    color: #8b8179;
+
+    font-family: monospace;
+}
+
+
+/* PUNTOS DE COLOR */
+
+.color-dot {
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+}
+
+
+.red-dot {
+    background: #ef5350;
+}
+
+.green-dot {
+    background: #55a868;
+}
+
+.blue-dot {
+    background: #4c78a8;
+}
+
+
+/* ================================= */
+/* INPUT NUMBER */
+/* ================================= */
+
+.number-input {
+
+    width: 75px;
+
+    border: 1px solid #ddd6d0;
+
+    border-radius: 10px;
+
+    padding: 8px;
+
+    text-align: center;
+
+    font-weight: 650;
+
+    background: white;
+
+    outline: none;
+}
+
+
+.number-input:focus {
+
+    border-color: #999;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================================= */
+/* SLIDERS */
+/* ================================= */
+
+.form-range {
+
+    margin: 0;
+
+    cursor: pointer;
+}
+
+
+/* ================================= */
+/* TARJETA TIP */
+/* ================================= */
+
+.tip-card {
+
+    margin-top: 20px;
+
+    background: #292725;
+
+    color: white;
+
+    border-radius: 22px;
+
+    padding: 22px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.tip-icon {
+
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+.tip-card h3 {
+
+    margin: 0 0 4px;
+
+    font-size: 16px;
+}
+
+
+.tip-card p {
+
+    margin: 0;
+
+    color: #c9c3bd;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================= */
+/* FOOTER */
+/* ================================= */
+
+.main-footer {
+
+    background: white;
+
+    border-top: 1px solid #e8e2dc;
+
+    padding: 25px 20px;
+
+    text-align: center;
+}
+
+
+.footer-content {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.footer-icon {
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 12px;
+
+    background: #f0ebe6;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #5c554e;
+}
+
+
+.footer-content strong {
+
+    display: block;
+
+    font-size: 14px;
+}
+
+
+.footer-content span {
+
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    color: #958b82;
+}
+
+
+.footer-project {
+
+    margin: 12px 0 0;
+
+    font-size: 11px;
+
+    color: #aaa19a;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 700px) {
+
+    .main-header {
+        padding: 22px 18px;
+    }
+
+
+    .main-header h1 {
+        font-size: 25px;
+    }
+
+
+    .main-container {
+        padding: 25px 15px;
+    }
+
+
+    .color-card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+
+    #colorBox {
+        height: 220px;
+    }
+
+
+    .rgb-control {
+
+        grid-template-columns: 85px 1fr 65px;
+
+        gap: 10px;
+
+        padding: 12px;
+    }
+
+
+    .number-input {
+        width: 65px;
+    }
+
+
+    .color-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tip-card {
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .header-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .header-description {
+        font-size: 12px;
+    }
+
+
+    .rgb-control {
+
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+
+
+    .color-label span:last-child {
+        margin-left: 5px;
+    }
+
+
+    .number-input {
+        width: 100%;
+    }
+
+}
